@@ -333,7 +333,7 @@ v20190702a:
     + Added hypothetical categories (C6-C10 and hypercanes)
         > Optionally enabled upon basin creation
         > C8+ and hypercanes kept track of in season stats
-        > Can be spawned in god mode
+        > Can be spawned in test mode
 v20190630a:
     + Added ability to save basins with a custom name using a text box
     * Finished the full switch from localStorage to indexedDB
@@ -372,7 +372,7 @@ v20190531a:
     + Added season summary timelines
         > Accessible by clicking "Show Timeline" in the info panel
 v20190526a:
-    + Added spawning of subtropical depressions and storms in god mode
+    + Added spawning of subtropical depressions and storms in test mode
         > Shift+D and click for subtropical depressions
         > Shift+S and click for subtropical storms
         > Pardon me mobile users; I'll add an alternative spawning method eventually
@@ -386,7 +386,7 @@ v20190525a:
     * Rotating a mobile device between portrait and landscape now toggles fullscreen mode (?)
     * Storms slightly less impacted by land interaction (still needs work)
 v20190518a:
-    + Added button in new basin settings menu to control if god mode (user able to spawn storms) is enabled/disabled
+    + Added button in new basin settings menu to control if test mode (user able to spawn storms) is enabled/disabled
         > Previously always enabled by default, but now the default setting for new basins is disabled
     * Cleaned up Basin constructor code to better accomodate new options
 v20190517a:
