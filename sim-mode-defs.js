@@ -1,11 +1,13 @@
 // ---- Simulation Modes ---- //
 
-const SIMULATION_MODES = ['Normal','Hyper','Wild','Megablobs','Experimental']; // Labels for sim mode selector UI
+const SIMULATION_MODES = ['Normal','Hyper','Wild','Megablobs','Experimental','WPac','EPac']; // Labels for sim mode selector UI
 const SIM_MODE_NORMAL = 0;
 const SIM_MODE_HYPER = 1;
 const SIM_MODE_WILD = 2;
 const SIM_MODE_MEGABLOBS = 3;
 const SIM_MODE_EXPERIMENTAL = 4;
+const SIM_MODE_WPAC = 5;
+const SIM_MODE_EPAC = 6;
 
 // ---- Active Attributes ---- //
 
@@ -39,13 +41,15 @@ SPAWN_RULES[SIM_MODE_HYPER] = {};
 SPAWN_RULES[SIM_MODE_WILD] = {};
 SPAWN_RULES[SIM_MODE_MEGABLOBS] = {};
 SPAWN_RULES[SIM_MODE_EXPERIMENTAL] = {};
+SPAWN_RULES[SIM_MODE_WPAC] = {};
+SPAWN_RULES[SIM_MODE_EPAC] = {};
 
 // -- Defaults -- //
 
 SPAWN_RULES.defaults.archetypes = {
     'tw': {
         x: ()=>random(0,WIDTH-1),
-        y: (b)=>b.hemY(random(HEIGHT*0.7,HEIGHT*0.9)),
+        y: (b)=>b.hemY(random(HEIGHT*0.7,HEIGHT*0.8)),
         pressure: [1000, 1020],
         windSpeed: [15, 35],
         type: TROPWAVE,
@@ -161,12 +165,221 @@ SPAWN_RULES.defaults.archetypes = {
         inherit: 'tc',
         pressure: 690,
         windSpeed: 440
-    }
+    },
+    'wp1': {
+        x: ()=>random(0.28*WIDTH,0.73*WIDTH),
+        y: (b)=>b.hemY(random(0.51*HEIGHT,0.76*HEIGHT)),
+        pressure: [1000, 1020],
+        windSpeed: [15, 35],
+        type: TROPWAVE,
+        organization: [0,0.3],
+        lowerWarmCore: 1,
+        upperWarmCore: 1,
+        depth: 0
+    },
+	'wp2': {
+        x: ()=>random(0.3*WIDTH,0.73*WIDTH),
+        y: (b)=>b.hemY(random(0.761*HEIGHT,0.875*HEIGHT)),
+        pressure: [1000, 1020],
+        windSpeed: [15, 35],
+        type: TROPWAVE,
+        organization: [0,0.3],
+        lowerWarmCore: 1,
+        upperWarmCore: 1,
+        depth: 0
+    },
+	    'wp3': {
+        x: ()=>random(0.28*WIDTH,0.73*WIDTH),
+        y: (b)=>b.hemY(random(0.51*HEIGHT,0.76*HEIGHT)),
+        pressure: [1000, 1020],
+        windSpeed: [15, 35],
+        type: TROPWAVE,
+        organization: [0,0.3],
+        lowerWarmCore: 1,
+        upperWarmCore: 1,
+        depth: 0
+    },
+	    'wp4': {
+        x: ()=>random(0.3*WIDTH,0.73*WIDTH),
+        y: (b)=>b.hemY(random(0.761*HEIGHT,0.875*HEIGHT)),
+        pressure: [1000, 1020],
+        windSpeed: [15, 35],
+        type: TROPWAVE,
+        organization: [0,0.3],
+        lowerWarmCore: 1,
+        upperWarmCore: 1,
+        depth: 0
+    },
+	    'wp5': {
+        x: ()=>random(0.731*WIDTH,0.807*WIDTH),
+        y: (b)=>b.hemY(random(0.511*HEIGHT,0.787*HEIGHT)),
+        pressure: [1000, 1020],
+        windSpeed: [15, 35],
+        type: TROPWAVE,
+        organization: [0,0.3],
+        lowerWarmCore: 1,
+        upperWarmCore: 1,
+        depth: 0
+    },
+	    'wp6': {
+        x: ()=>random(0.731*WIDTH,0.807*WIDTH),
+        y: (b)=>b.hemY(random(0.788*HEIGHT,0.875*HEIGHT)),
+        pressure: [1000, 1020],
+        windSpeed: [15, 35],
+        type: TROPWAVE,
+        organization: [0,0.3],
+        lowerWarmCore: 1,
+        upperWarmCore: 1,
+        depth: 0
+    },
+	    'wp7': {
+        x: ()=>random(0.667*WIDTH,0.807*WIDTH),
+        y: (b)=>b.hemY(random(0.445*HEIGHT,0.509*HEIGHT)),
+        pressure: [1000, 1020],
+        windSpeed: [15, 35],
+        type: TROPWAVE,
+        organization: [0,0.3],
+        lowerWarmCore: 1,
+        upperWarmCore: 1,
+        depth: 0
+    },
+	    'wp8': {
+        x: ()=>random(0.808*WIDTH,0.98*WIDTH),
+        y: (b)=>b.hemY(random(0.55*HEIGHT,0.83*HEIGHT)),
+        pressure: [1000, 1020],
+        windSpeed: [15, 35],
+        type: TROPWAVE,
+        organization: [0,0.3],
+        lowerWarmCore: 1,
+        upperWarmCore: 1,
+        depth: 0
+    },
+	    'wp9': {
+        x: ()=>random(0.145*WIDTH,0.244*WIDTH),
+        y: (b)=>b.hemY(random(0.648*HEIGHT,0.84*HEIGHT)),
+        pressure: [1000, 1020],
+        windSpeed: [15, 35],
+        type: TROPWAVE,
+        organization: [0,0.3],
+        lowerWarmCore: 1,
+        upperWarmCore: 1,
+        depth: 0
+    },
+	    'wp10': {
+        x: ()=>random(0.145*WIDTH,0.244*WIDTH),
+        y: (b)=>b.hemY(random(0.841*HEIGHT,0.875*HEIGHT)),
+        pressure: [1000, 1020],
+        windSpeed: [15, 35],
+        type: TROPWAVE,
+        organization: [0,0.3],
+        lowerWarmCore: 1,
+        upperWarmCore: 1,
+        depth: 0
+    },
+	    'wp11': {
+        x: ()=>random(0.115*WIDTH,0.14*WIDTH),
+        y: (b)=>b.hemY(random(0.667*HEIGHT,0.695*HEIGHT)),
+        pressure: [1000, 1020],
+        windSpeed: [15, 35],
+        type: TROPWAVE,
+        organization: [0,0.3],
+        lowerWarmCore: 1,
+        upperWarmCore: 1,
+        depth: 0
+    },
+	    'wp12': {
+        x: ()=>random(0.094*WIDTH,0.14*WIDTH),
+        y: (b)=>b.hemY(random(0.842*HEIGHT,0.875*HEIGHT)),
+        pressure: [1000, 1020],
+        windSpeed: [15, 35],
+        type: TROPWAVE,
+        organization: [0,0.3],
+        lowerWarmCore: 1,
+        upperWarmCore: 1,
+        depth: 0
+    },
+	    'wp13': {
+        x: ()=>random(0.182*WIDTH,0.209*WIDTH),
+        y: (b)=>b.hemY(random(0.62*HEIGHT,0.649*HEIGHT)),
+        pressure: [1000, 1020],
+        windSpeed: [15, 35],
+        type: TROPWAVE,
+        organization: [0,0.3],
+        lowerWarmCore: 1,
+        upperWarmCore: 1,
+        depth: 0
+    },
+	    'wp14': {
+        x: ()=>random(0.21*WIDTH,0.239*WIDTH),
+        y: (b)=>b.hemY(random(0.602*HEIGHT,0.649*HEIGHT)),
+        pressure: [1000, 1020],
+        windSpeed: [15, 35],
+        type: TROPWAVE,
+        organization: [0,0.3],
+        lowerWarmCore: 1,
+        upperWarmCore: 1,
+        depth: 0
+    },
+	    'wp15': {
+        x: ()=>random(0.24*WIDTH,0.269*WIDTH),
+        y: (b)=>b.hemY(random(0.56*HEIGHT,0.635*HEIGHT)),
+        pressure: [1000, 1020],
+        windSpeed: [15, 35],
+        type: TROPWAVE,
+        organization: [0,0.3],
+        lowerWarmCore: 1,
+        upperWarmCore: 1,
+        depth: 0
+    },
+	    'wp16': {
+        x: ()=>random(0.245*WIDTH,0.269*WIDTH),
+        y: (b)=>b.hemY(random(0.636*HEIGHT,0.685*HEIGHT)),
+        pressure: [1000, 1020],
+        windSpeed: [15, 35],
+        type: TROPWAVE,
+        organization: [0,0.3],
+        lowerWarmCore: 1,
+        upperWarmCore: 1,
+        depth: 0
+    },
+	    'wp17': {
+        x: ()=>random(0.266*WIDTH,0.301*WIDTH),
+        y: (b)=>b.hemY(random(0.761*HEIGHT,0.852*HEIGHT)),
+        pressure: [1000, 1020],
+        windSpeed: [15, 35],
+        type: TROPWAVE,
+        organization: [0,0.3],
+        lowerWarmCore: 1,
+        upperWarmCore: 1,
+        depth: 0
+    },
+	    'wp18': {
+        x: ()=>random(0.245*WIDTH,0.265*WIDTH),
+        y: (b)=>b.hemY(random(0.761*HEIGHT,0.875*HEIGHT)),
+        pressure: [1000, 1020],
+        windSpeed: [15, 35],
+        type: TROPWAVE,
+        organization: [0,0.3],
+        lowerWarmCore: 1,
+        upperWarmCore: 1,
+        depth: 0
+    },
+	    'ep': {
+        x: ()=>random(0,WIDTH-1),
+        y: (b)=>b.hemY(random(0.761*HEIGHT,0.8*HEIGHT)),
+        pressure: [1000, 1020],
+        windSpeed: [15, 35],
+        type: TROPWAVE,
+        organization: [0,0.3],
+        lowerWarmCore: 1,
+        upperWarmCore: 1,
+        depth: 0
+    },
 };
 
 SPAWN_RULES.defaults.doSpawn = function(b){
     // tropical waves
-    if(random()<0.015*sq((seasonalSine(b.tick)+1)/2)) b.spawnArchetype('tw');
+    if(random()<0.00625*sq((seasonalSine(b.tick)+1)/2)) b.spawnArchetype('tw');
 
     // extratropical cyclones
     if(random()<0.01-0.002*seasonalSine(b.tick)) b.spawnArchetype('ex');
@@ -265,6 +478,35 @@ SPAWN_RULES[SIM_MODE_EXPERIMENTAL].archetypes = {
     }
 };
 
+SPAWN_RULES[SIM_MODE_WPAC].doSpawn = function(b){
+    // tropic spawn area
+    if(random()<0.0012375) b.spawnArchetype('wp1');		// main basin (t.o.cancer)
+    if(random()<0.0012375) b.spawnArchetype('wp2');		// main basin (equator)
+	if(random()<0.0012375) b.spawnArchetype('wp3');		// basin edge, philippines sea (t.o.cancer)
+    if(random()<0.0012375) b.spawnArchetype('wp4');			// basin edge, philippines sea (equator)
+    if(random()<0.00045) b.spawnArchetype('wp5');   // basin edge, western IDL (t.o.cancer)
+    if(random()<0.00045) b.spawnArchetype('wp6');		// basin edge, western IDL (equator)
+	if(random()<0.0003375) b.spawnArchetype('wp7');	// southern japan
+    if(random()<0.0001125) b.spawnArchetype('wp8');		// CPAC, eastern IDL (crossover etc)
+    if(random()<0.00028125) b.spawnArchetype('wp9');	// northern SCS
+    if(random()<0.0001125) b.spawnArchetype('wp10');		// southern SCS
+    if(random()<0.0001125) b.spawnArchetype('wp11');	// gulf of tonkin
+    if(random()<0.00005625) b.spawnArchetype('wp12');	// southern vietnam
+    if(random()<0.00016875) b.spawnArchetype('wp13');	// southern china
+    if(random()<0.00016875) b.spawnArchetype('wp14');	// southeastern china
+    if(random()<0.00016875) b.spawnArchetype('wp15');	// taiwan coast
+    if(random()<0.000225) b.spawnArchetype('wp16');	// northern philippines
+    if(random()<0.000225) b.spawnArchetype('wp17');	// central philippines (eastern) 
+    if(random()<0.00016875) b.spawnArchetype('wp18');	// central philippines (western)
+    // extratropical cyclones
+    if(random()<0.01-0.002*seasonalSine(b.tick)) b.spawnArchetype('ex');      
+};
+
+SPAWN_RULES[SIM_MODE_EPAC].doSpawn = function(b){
+	if(random()<0.0075) b.spawnArchetype('ep');
+    if(random()<0.01-0.002*seasonalSine(b.tick)) b.spawnArchetype('ex');
+};
+
 SPAWN_RULES[SIM_MODE_EXPERIMENTAL].doSpawn = SPAWN_RULES[SIM_MODE_HYPER].doSpawn;
 
 
@@ -278,6 +520,8 @@ ENV_DEFS[SIM_MODE_HYPER] = {}; // Same for "Hyper" simulation mode
 ENV_DEFS[SIM_MODE_WILD] = {};  // "Wild" simulation mode
 ENV_DEFS[SIM_MODE_MEGABLOBS] = {}; // "Megablobs" simulation mode
 ENV_DEFS[SIM_MODE_EXPERIMENTAL] = {}; // "Experimental" simulation mode
+ENV_DEFS[SIM_MODE_WPAC] = {};
+ENV_DEFS[SIM_MODE_EPAC] = {};
 
 // -- Sample Env Field -- //
 
@@ -329,10 +573,10 @@ ENV_DEFS.defaults.jetstream = {
         [4,0.5,160,300,1,2]
     ],
     modifiers: {
-        peakLat: 0.35,
-        antiPeakLat: 0.55,
-        peakRange: 0.35,
-        antiPeakRange: 0.5
+        peakLat: 0.25,
+        antiPeakLat: 0.47,
+        peakRange: 0.25,
+        antiPeakRange: 0.45
     }
 };
 ENV_DEFS[SIM_MODE_NORMAL].jetstream = {};
@@ -363,6 +607,15 @@ ENV_DEFS[SIM_MODE_MEGABLOBS].jetstream = {
     }
 };
 ENV_DEFS[SIM_MODE_EXPERIMENTAL].jetstream = {};
+ENV_DEFS[SIM_MODE_WPAC].jetstream = {};
+ENV_DEFS[SIM_MODE_EPAC].jetstream = {
+    modifiers: {
+        peakLat: 0.35,
+        antiPeakLat: 0.55,
+        peakRange: 0.35,
+        antiPeakRange: 0.5
+    }
+};
 
 // -- LLSteering -- //
 
@@ -375,7 +628,7 @@ ENV_DEFS.defaults.LLSteering = {
         // Jetstream
         let j = u.field('jetstream');
         // Cosine curve from 0 at poleward side of map to 1 at equatorward side
-        let h = map(cos(map(y,0,HEIGHT,0,PI)),-1,1,1,0);
+        let h = map(cos(map(y,0,HEIGHT,0,PI)),-1.125,1,1,0);
         // westerlies
         let west = constrain(pow(1-h+map(u.noise(0), 0, 1, -u.modifiers.westerlyNoiseRange, u.modifiers.westerlyNoiseRange)+map(j, 0, HEIGHT, -u.modifiers.westerlyJetstreamEffectRange, u.modifiers.westerlyJetstreamEffectRange),2)*4,0, u.modifiers.westerlyMax);
         // ridging and trades
@@ -414,7 +667,7 @@ ENV_DEFS.defaults.LLSteering = {
         ridgingJetstreamEffectRange: 0.3,
         tradesRidgingEffectRange: 0.3,
         tradesMax: 3,
-        tradesAngleEquator: 17*Math.PI/16,
+        tradesAngleEquator: 15*Math.PI/16,
         tradesAngle: 511*Math.PI/512,
         noiseBase: 1.5,
         noiseExponentMin: -8,
@@ -448,6 +701,77 @@ ENV_DEFS[SIM_MODE_WILD].LLSteering = {
 };
 ENV_DEFS[SIM_MODE_MEGABLOBS].LLSteering = {};
 ENV_DEFS[SIM_MODE_EXPERIMENTAL].LLSteering = {};
+ENV_DEFS[SIM_MODE_WPAC].LLSteering = {
+    displayName: 'Low-level steering',
+    version: 0,
+    mapFunc: (u,x,y,z)=>{
+        u.vec.set(1);    // reset vector
+
+        // Jetstream
+        let j = u.field('jetstream');
+        // Cosine curve from 0 at poleward side of map to 1 at equatorward side
+        let h = map(cos(map(y,0,HEIGHT,0,PI)),-1.25,1,1,0);
+        // westerlies
+        let west = constrain(pow(1-h+map(u.noise(0), 0, 1, -u.modifiers.westerlyNoiseRange, u.modifiers.westerlyNoiseRange)+map(j, 0, HEIGHT, -u.modifiers.westerlyJetstreamEffectRange, u.modifiers.westerlyJetstreamEffectRange),2)*4,0, u.modifiers.westerlyMax);
+        // ridging and trades
+        let ridging = constrain(u.noise(1)+map(j, 0, HEIGHT, u.modifiers.ridgingJetstreamEffectRange, -u.modifiers.ridgingJetstreamEffectRange),0,1);
+        let trades = constrain(pow(h+map(ridging, 0, 1, -u.modifiers.tradesRidgingEffectRange, u.modifiers.tradesRidgingEffectRange),2)*3,0, u.modifiers.tradesMax);
+        let tAngle = map(h, 0.9, 1, u.modifiers.tradesAngle, u.modifiers.tradesAngleEquator); // trades angle
+        // noise angle
+        let a = map(u.noise(3),0,1,0,4*TAU);
+        // noise magnitude
+        let m = pow(u.modifiers.noiseBase, map(u.noise(2), 0, 1, u.modifiers.noiseExponentMin, u.modifiers.noiseExponentMax));
+
+        // apply to vector
+        u.vec.rotate(a);
+        u.vec.mult(m);
+        u.vec.add(west+trades*cos(tAngle),trades*sin(tAngle));
+        return u.vec;
+    },
+    displayFormat: v=>{
+        let speed = round(v.mag()*100)/100;
+        let direction = v.heading();
+        // speed is still in "u/hr" (coordinate units per hour) for now
+        return speed + ' u/hr ' + compassHeading(direction);
+    },
+    vector: true,
+    magMap: [0,3,0,16],
+    noiseChannels: [
+        [4,0.5,80,100,1,3],
+        '',
+        '',
+        [4,0.5,170,300,1,3]
+    ],
+    modifiers: {
+        westerlyNoiseRange: 0.3,
+        westerlyJetstreamEffectRange: 0.4,
+        westerlyMax: 4,
+        ridgingJetstreamEffectRange: 0.3,
+        tradesRidgingEffectRange: 0.3,
+        tradesMax: 3,
+        tradesAngleEquator: 15*Math.PI/16,
+        tradesAngle: 511*Math.PI/512,
+        noiseBase: 1.5,
+        noiseExponentMin: -8,
+        noiseExponentMax: 4
+    }
+};
+ENV_DEFS[SIM_MODE_EPAC].LLSteering = {
+	modifiers: {
+        westerlyNoiseRange: 0.3,
+        westerlyJetstreamEffectRange: 0.4,
+        westerlyMax: 4,
+        ridgingJetstreamEffectRange: 0.3,
+        tradesRidgingEffectRange: 0.3,
+        tradesMax: 1.5,
+        tradesAngleEquator: 15*Math.PI/16,
+        tradesAngle: 511*Math.PI/512,
+        noiseBase: 1.5,
+        noiseExponentMin: -8,
+        noiseExponentMax: 4
+    }
+
+};
 
 // -- ULSteering -- //
 
@@ -572,6 +896,12 @@ ENV_DEFS[SIM_MODE_WILD].ULSteering = {
 };
 ENV_DEFS[SIM_MODE_MEGABLOBS].ULSteering = {};
 ENV_DEFS[SIM_MODE_EXPERIMENTAL].ULSteering = {};
+ENV_DEFS[SIM_MODE_WPAC].ULSteering = {
+    modifiers: {
+        hadleyUpperBound: 5
+    }
+};    
+ENV_DEFS[SIM_MODE_EPAC].ULSteering = {};
 
 // -- shear -- //
 
@@ -613,6 +943,8 @@ ENV_DEFS[SIM_MODE_HYPER].shear = {};
 ENV_DEFS[SIM_MODE_WILD].shear = {};
 ENV_DEFS[SIM_MODE_MEGABLOBS].shear = {};
 ENV_DEFS[SIM_MODE_EXPERIMENTAL].shear = {};
+ENV_DEFS[SIM_MODE_WPAC].shear = {};
+ENV_DEFS[SIM_MODE_EPAC].shear = {};
 
 // -- SSTAnomaly -- //
 
@@ -621,8 +953,8 @@ ENV_DEFS.defaults.SSTAnomaly = {
     version: 0,
     mapFunc: (u,x,y,z)=>{
         let v = u.noise(0);
-        v = v*2;
-        let i = v<1 ? -1 : 1;
+        v = v*1.5;
+        let i = v<1 ? -0.7578125 : 2;
         v = 1-abs(1-v);
         if(v===0) v = 0.000001;
         v = log(v);
@@ -676,6 +1008,24 @@ ENV_DEFS[SIM_MODE_MEGABLOBS].SSTAnomaly = {
     }
 };
 ENV_DEFS[SIM_MODE_EXPERIMENTAL].SSTAnomaly = {};
+ENV_DEFS[SIM_MODE_WPAC].SSTAnomaly = {
+    mapFunc: (u,x,y,z)=>{
+        let v = u.noise(0);
+        v = v*1.75;
+        let i = v<1 ? -0.4375 : 1;
+        v = 1-abs(1-v);
+        if(v===0) v = 0.000001;
+        v = log(v);
+        let r;
+        if(u.modifiers.r!==undefined) r = u.modifiers.r;
+        else r = map(y,1,HEIGHT,3,6);
+        v = -r*v;
+        v = v*i;
+        if(u.modifiers.bigBlobBase!==undefined && v>u.modifiers.bigBlobExponentThreshold) v += pow(u.modifiers.bigBlobBase,v-u.modifiers.bigBlobExponentThreshold)-1;
+        return v;
+	},
+};
+ENV_DEFS[SIM_MODE_EPAC].SSTAnomaly = {};
 
 // -- SST -- //
 
@@ -686,7 +1036,7 @@ ENV_DEFS.defaults.SST = {
         if(y<0) return 0;
         let anom = u.field('SSTAnomaly');
         let s = seasonalSine(z);
-        let w = map(cos(map(x,0,WIDTH,0,PI)),-1,1,0,1);
+        let w = map(cos(map(x,0,WIDTH,0,PI)),-1,1,0.75,1);
         let h0 = y/HEIGHT;
         let h1 = (sqrt(h0)+h0)/2;
         let h2 = sqrt(sqrt(h0));
@@ -763,6 +1113,31 @@ ENV_DEFS[SIM_MODE_EXPERIMENTAL].SST = {
         peakSeasonTropicsTemp: 28
     }
 };
+ENV_DEFS[SIM_MODE_WPAC].SST = {
+	mapFunc: (u,x,y,z)=>{
+        if(y<0) return 0;
+        let anom = u.field('SSTAnomaly');
+        let s = seasonalSine(z);
+        let w = map(cos(map(x,0,WIDTH,0,PI)),-0.8125,0.8125,0.8125,0.8125);
+        let h0 = y/HEIGHT;
+        let h1 = (sqrt(h0)+h0)/2;
+        let h2 = sqrt(sqrt(h0));
+        let h = map(cos(lerp(PI,0,lerp(h1,h2,sq(w)))),-1,1,0,1);
+        let ospt = u.modifiers.offSeasonPolarTemp;
+        let pspt = u.modifiers.peakSeasonPolarTemp;
+        let ostt = u.modifiers.offSeasonTropicsTemp;
+        let pstt = u.modifiers.peakSeasonTropicsTemp;
+        let t = lerp(map(s,-1,1,ospt,pspt),map(s,-1,1,ostt,pstt),h);
+        return t+anom;
+    },
+    modifiers: {
+        peakSeasonPolarTemp: 0,
+        offSeasonPolarTemp: -3,
+        offSeasonTropicsTemp: 27,
+        peakSeasonTropicsTemp: 29.5
+    }
+};    
+ENV_DEFS[SIM_MODE_EPAC].SST = {};
 
 // -- moisture -- //
 
@@ -794,8 +1169,8 @@ ENV_DEFS.defaults.moisture = {
         return c;
     },
     modifiers: {
-        polarMoisture: 0.43,
-        tropicalMoisture: 0.57,
+        polarMoisture: 0.52,
+        tropicalMoisture: 0.62,
         mountainMoisture: 0.2
     },
     noiseChannels: [
@@ -827,6 +1202,14 @@ ENV_DEFS[SIM_MODE_WILD].moisture = {
 };
 ENV_DEFS[SIM_MODE_MEGABLOBS].moisture = {};
 ENV_DEFS[SIM_MODE_EXPERIMENTAL].moisture = {};
+ENV_DEFS[SIM_MODE_WPAC].moisture = {
+    modifiers: {
+        polarMoisture: 0.45,
+        tropicalMoisture: 0.75,
+        mountainMoisture: 0
+    }
+};    
+ENV_DEFS[SIM_MODE_EPAC].moisture = {};
 
 // ---- Active Storm System Algorithm ---- //
 
@@ -838,6 +1221,8 @@ STORM_ALGORITHM[SIM_MODE_HYPER] = {};
 STORM_ALGORITHM[SIM_MODE_WILD] = {};
 STORM_ALGORITHM[SIM_MODE_MEGABLOBS] = {};
 STORM_ALGORITHM[SIM_MODE_EXPERIMENTAL] = {};
+STORM_ALGORITHM[SIM_MODE_WPAC] = {};    
+STORM_ALGORITHM[SIM_MODE_EPAC] = {};
 
 // -- Interaction -- //
 
@@ -1050,6 +1435,8 @@ STORM_ALGORITHM[SIM_MODE_HYPER].version = 0;
 STORM_ALGORITHM[SIM_MODE_WILD].version = 0;
 STORM_ALGORITHM[SIM_MODE_MEGABLOBS].version = 0;
 STORM_ALGORITHM[SIM_MODE_EXPERIMENTAL].version = 1;
+STORM_ALGORITHM[SIM_MODE_WPAC].version = 0;    
+STORM_ALGORITHM[SIM_MODE_EPAC].version = 0; 
 
 // -- Upgrade -- //
 // Converts active attributes in case an active system is loaded after an algorithm change breaks old values
