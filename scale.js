@@ -770,5 +770,31 @@ const COLOR_SCHEMES = [
             'C10': '#F9A7B0',
             'HYC': '#ff99ff'
         }
+    },
+    {
+        name: 'Aqua Television',
+        values: {
+            'TDi': '#37AAFF',
+            'SDi': '#C941FF',
+            'TD': '#0073FF',
+            'SD': '#A61EFF',
+            'TS': '#00FF00',
+            'SS': '#94F097',
+            'STS': '#A0FF00',
+            'SSS': '#B4F055',
+            'TY': '#FFFF00',
+            'VSTY': '#FF9100',
+            'C1': '#FFFF00',
+            'C2': '#FFC300',
+            'C3': '#FF9100',
+            'C4': '#FF4200',
+            'C5': '#FF0064',
+            'C6': '#FFAFFF',
+            'C7': '#FFE6FF',
+            'C8': '#CFE6FF',
+            'C9': '#CFC0FF',
+            'C10': '#CF80FF',
+            'HYC': '#CF00FF'
+        }
     }
 ];
