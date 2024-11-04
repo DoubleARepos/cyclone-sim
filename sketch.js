@@ -194,11 +194,11 @@ function draw(){
     }catch(err){            // BSOD
         resetMatrix();
         colorMode(RGB);
-        background(15,15,200);
+        background(0,0,0);
         fill(255);
         textSize(24);
         textAlign(LEFT,TOP);
-        text("The program has committed a crime and will now cease to exist. :(",width/16,height/8);
+        text("An irregularity has been detected.",width/16,height/8);
         textSize(15);
         text(err.stack,width/16,height/4);
         console.error(err);
