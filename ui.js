@@ -337,7 +337,7 @@ UI.init = function(){
         seedBox.hide();
         if(UI.viewBasin instanceof Basin){
             let basin = UI.viewBasin;
-            if(basin.godMode && keyIsPressed && basin.viewingPresent()) {
+            if(basin.testMode && keyIsPressed && basin.viewingPresent()) {
                 if(['l','x','d','D','s','S','1','2','3','4','5','6','7','8','9','0','y'].includes(key))
                     basin.spawnArchetype(key,getMouseX(),getMouseY());
                 // let g = {x: getMouseX(), y: getMouseY()};
