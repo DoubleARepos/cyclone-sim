@@ -629,7 +629,7 @@ class Basin{
                             this.mapType = arr.pop() || 0;
                             this.SHem = flags & 1;
                             flags >>= 1;
-                            this.godMode = flags & 1;
+                            this.testMode = flags & 1;
                             flags >>= 1;
                             oldhyper = flags & 1;
                             if(oldhyper)
