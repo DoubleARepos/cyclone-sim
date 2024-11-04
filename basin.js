@@ -8,7 +8,7 @@ class Basin{
         this.subBasins = {};
         this.tick = 0;
         this.lastSaved = 0;
-        this.godMode = opts.godMode;
+        this.testMode = opts.testMode;
         this.SHem = opts.hem;
         this.actMode = opts.actMode || 0;
         if(opts.year !== undefined)
@@ -521,7 +521,7 @@ class Basin{
             b.flags = 0;
             b.flags |= 0;   // former hyper mode
             b.flags <<= 1;
-            b.flags |= this.godMode;
+            b.flags |= this.testMode;
             b.flags <<= 1;
             b.flags |= this.SHem;
             for(let p of [
@@ -582,7 +582,7 @@ class Basin{
                         let flags = obj.flags;
                         this.SHem = flags & 1;
                         flags >>= 1;
-                        this.godMode = flags & 1;
+                        this.testMode = flags & 1;
                         flags >>= 1;
                         oldhyper = flags & 1;
                         this.actMode = obj.actMode;
