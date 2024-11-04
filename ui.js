@@ -532,7 +532,7 @@ UI.init = function(){
         }
     }],undefined,false);
 
-    let gmodesel = yearsel.append(false,0,basinCreationMenuButtonSpacing,basinCreationMenuButtonWidths,basinCreationMenuButtonHeights,function(s){    // Simulation mode selector
+    let tmodesel = yearsel.append(false,0,basinCreationMenuButtonSpacing,basinCreationMenuButtonWidths,basinCreationMenuButtonHeights,function(s){    // Simulation mode selector
         let mode = newBasinSettings.actMode || 0;
         mode = SIMULATION_MODES[mode];
         s.button('Simulation Mode: '+mode,true);
@@ -541,15 +541,15 @@ UI.init = function(){
         if(newBasinSettings.actMode===undefined) newBasinSettings.actMode = 0;
         newBasinSettings.actMode++;
         newBasinSettings.actMode %= SIMULATION_MODES.length;
-    }).append(false,0,basinCreationMenuButtonSpacing,basinCreationMenuButtonWidths,basinCreationMenuButtonHeights,function(s){     // God mode Selector
-        let gMode = newBasinSettings.godMode ? "Enabled" : "Disabled";
-        s.button('God Mode: '+gMode,true);
+    }).append(false,0,basinCreationMenuButtonSpacing,basinCreationMenuButtonWidths,basinCreationMenuButtonHeights,function(s){     // Test mode Selector
+        let tMode = newBasinSettings.testMode ? "Enabled" : "Disabled";
+        s.button('Test Mode: '+tMode,true);
     },function(){
         yearselbox.enterFunc();
-        newBasinSettings.godMode = !newBasinSettings.godMode;
+        newBasinSettings.testMode = !newBasinSettings.testMode;
     });
 
-    gmodesel.append(false,0,basinCreationMenuButtonSpacing,basinCreationMenuButtonWidths,basinCreationMenuButtonHeights,function(s){     // Advanced options button
+    tmodesel.append(false,0,basinCreationMenuButtonSpacing,basinCreationMenuButtonWidths,basinCreationMenuButtonHeights,function(s){     // Advanced options button
         s.button("Advanced",true);
     },function(){
         yearselbox.enterFunc();
@@ -575,7 +575,7 @@ UI.init = function(){
         for(let o of [
             'actMode',
             'mapType',
-            'godMode',
+            'testMode',
         ]) opts[o] = newBasinSettings[o];
         for(let o of [
             'seed',
