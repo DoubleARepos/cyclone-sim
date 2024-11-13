@@ -98,7 +98,7 @@ SPAWN_RULES[SIM_MODE_Deluge] = {};
 SPAWN_RULES.defaults.archetypes = {
     'tw': {
         x: ()=>random(0,WIDTH-1),
-        y: (b)=>b.hemY(random(HEIGHT*0.58,HEIGHT*0.92)), // this is the latitudes at which storms spawn, so for example the current latitude max is 70 so tropical waves currently form between 25 - 8 of the equator.
+        y: (b)=>b.hemY(random(HEIGHT*0.58,HEIGHT*0.8)), // this is the latitudes at which storms spawn, so for example the current latitude max is 70 so tropical waves currently form between 25 - 8 of the equator.
         pressure: [1005,1010,1015],
         windSpeed: [ 10, 20, 30],
         type: TROPWAVE,
