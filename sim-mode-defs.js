@@ -1127,7 +1127,7 @@ ENV_DEFS[SIM_MODE_WILD].SSTAnomaly = {
 };
 ENV_DEFS[SIM_MODE_MEGABLOBS].SSTAnomaly = {
     modifiers: {
-        r: 7,
+        r: 9,
         bigBlobBase: 1.8,
         bigBlobExponentThreshold: 1
     }
