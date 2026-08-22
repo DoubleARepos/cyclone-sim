@@ -26,6 +26,7 @@ var paused,
     renderToDo,
     oldMouseX,
     oldMouseY,
+    SeasonalSine;
 
 function setup() {
     setVersion(TITLE + " v", VERSION_NUMBER);
