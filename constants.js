@@ -548,7 +548,7 @@ const HELP_TEXT = "Keyboard Controls:\n" +
 const COLORS = {};      // For storing all colors used in the graphics
 
 function defineColors(){    // Since p5 color() function doesn't work until setup(), this is called in setup()
-    COLORS.bg = color(10,55,155);
+    COLORS.bg = color(0,43,77);
     COLORS.storm = {};
     COLORS.storm[EXTROP] = color(220,220,220);
     COLORS.storm[TROPWAVE] = color(130,130,240);
@@ -577,6 +577,7 @@ function defineColors(){    // Since p5 color() function doesn't work until setu
     COLORS.UI.buttonBox = color(200,170);
     COLORS.UI.buttonHover = color(200);
     COLORS.UI.text = color(0);
+	COLORS.UI.altText = color(255);
     COLORS.UI.greyText = color(130);
     COLORS.UI.redText = color(240,0,0);
     COLORS.UI.nonSelectedInput = color(70);
