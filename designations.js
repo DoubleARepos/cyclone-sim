@@ -420,8 +420,8 @@ DesignationSystem.atlantic = new DesignationSystem({
         ['Ana','Bill','Claudette','Danny','Elsa','Fred','Grace','Henri','Imani','Julian','Kate','Larry','Mindy','Nicholas','Odette','Peter','Rose','Sam','Teresa','Victor','Wanda'],
         ['Alex','Bonnie','Colin','Danielle','Earl','Farrah','Gaston','Hermine','Idris','Julia','Karl','Lisa','Martin','Nicole','Owen','Paula','Richard','Shary','Tobias','Virginie','Walter'],
         ['Arlene','Bret','Cindy','Don','Emily','Franklin','Gert','Harold','Idalia','Jose','Katia','Lee','Margot','Nigel','Ophelia','Philippe','Rina','Sean','Tammy','Vince','Whitney'],
-        ['Alberto','Beryl','Chris','Debby','Ernesto','Francine','Gordon','Helene','Isaac','Joyce','Kirk','Leslie','Milton','Nadine','Oscar','Patty','Rafael','Sara','Tony','Valerie','William'],
-        ['Andrea','Barry','Chantal','Dexter','Erin','Fernand','Gabrielle','Humberto','Imelda','Jerry','Karen','Lorenzo','Melissa','Nestor','Olga','Pablo','Rebekah','Sebastien','Tanya','Van','Wendy'],
+        ['Alberto','Brianna','Chris','Debby','Ernesto','Francine','Gordon','Holly','Isaac','Joyce','Kirk','Leslie','Miguel','Nadine','Oscar','Patty','Rafael','Sara','Tony','Valerie','William'],
+        ['Andrea','Barry','Chantal','Dexter','Erin','Fernand','Gabrielle','Humberto','Imelda','Jerry','Karen','Lorenzo','Molly','Nestor','Olga','Pablo','Rebekah','Sebastien','Tanya','Van','Wendy'],
         ['Arthur','Bertha','Cristobal','Dolly','Edouard','Fay','Gonzalo','Hanna','Isaias','Josephine','Kyle','Leah','Marco','Nana','Omar','Paulette','Rene','Sally','Teddy','Vicky','Wilfred']
     ],
     auxLists: [
@@ -438,7 +438,7 @@ DesignationSystem.easternPacific = new DesignationSystem({
         ["Andres","Blanca","Carlos","Dolores","Enrique","Felicia","Guillermo","Hilda","Ignacio","Jimena","Kevin","Linda","Marty","Nora","Olaf","Pamela","Rick","Sandra","Terry","Vivian","Waldo","Xina","York","Zelda"],
         ["Agatha","Blas","Celia","Darby","Estelle","Frank","Georgette","Howard","Ivette","Javier","Kay","Lester","Madeline","Newton","Orlene","Paine","Roslyn","Seymour","Tina","Virgil","Winifred","Xavier","Yolanda","Zeke"],
         ["Adrian","Beatriz","Calvin","Debora","Eugene","Fernanda","Greg","Hilary","Irwin","Jova","Kenneth","Lidia","Max","Norma","Otilio","Pilar","Ramon","Selma","Todd","Veronica","Wiley","Xina","York","Zelda"],
-        ["Aletta","Bud","Carlotta","Daniel","Emilia","Fabio","Gilma","Hector","Ileana","John","Kristy","Lane","Miriam","Norman","Olivia","Paul","Rosa","Sergio","Tara","Vicente","Willa","Xavier","Yolanda","Zeke"],
+        ["Aletta","Bud","Carlotta","Daniel","Emilia","Fabio","Gilma","Hector","Ileana","Jake","Kristy","Lane","Miriam","Norman","Olivia","Paul","Rosa","Sergio","Tara","Vicente","Willa","Xavier","Yolanda","Zeke"],
         ["Alvin","Barbara","Cosme","Dalila","Erick","Flossie","Gil","Henriette","Ivo","Juliette","Kiko","Lorena","Mario","Narda","Octave","Priscilla","Raymond","Sonia","Tico","Velma","Wallis","Xina","York","Zelda"],
         ["Amanda","Boris","Cristina","Douglas","Elida","Fausto","Genevieve","Hernan","Iselle","Julio","Karina","Lowell","Marie","Norbert","Odalys","Polo","Rachel","Simon","Trudy","Vance","Winnie","Xavier","Yolanda","Zeke"]
     ],
@@ -462,11 +462,11 @@ DesignationSystem.westernPacific = new DesignationSystem({
     displayName: 'Western Pacific',
     suffix: 'W',
     mainLists: [    // names marked with empty comments are retired and will be replaced when replacement names are announced
-        ["Damrey","Haikui"/**/,"Kirogi","Yun-yeung","Koinu","Bolaven","Sanba","Jelawat","Ewiniar","Maliksi","Gaemi","Prapiroon","Maria","Son-Tinh","Ampil","Wukong","Jongdari","Shanshan","Yagi","Leepi","Bebinca","Pulasan","Soulik","Cimaron","Jebi","Krathon","Barijat","Trami"],
-        ["Kong-rey","Yinxing","Toraji","Man-yi","Usagi","Pabuk","Wutip","Sepat","Mun","Danas","Nari","Wipha","Francisco","Co-May","Krosa","Bailu","Podul","Lingling","Kajiki","Nongfa","Peipah","Tapah","Mitag","Ragasa","Neoguri","Bualoi","Matmo","Halong"],
-        ["Nakri","Fengshen","Kalmaegi","Fung-wong","Koto","Nokaen","Penha","Nuri","Sinlaku","Hagupit","Jangmi","Mekkhala","Higos","Bavi","Maysak","Haishen","Noul","Dolphin","Kujira","Chan-hom","Peilou","Nangka","Saudel","Narra","Gaenari","Atsani","Etau","Bang-lang"],
+        ["Damrey","Tianma","Kirogi","Yun-yeung","Koinu","Bolaven","Sanba","Jelawat","Tirou","Maliksi","Gaemi","Prapiroon","Maria","Son-Tinh","Ampil","Wukong","Jongdari","Shanshan","Tomo","Leepi","Bebinca","Pulasan","Soulik","Cimaron","Narae","Burapha","Barijat","Hoaban"],
+        ["Koki","Yinxing","Gaeguri","Dim-sum","Hebi","Pabuk","Wutip","Sepat","Mun","Danas","Nari","Wipha"/**/,"Francisco","Co-May"/**/,"Krosa","Bailu","Podul","Lingling","Kajiki","Nongfa","Peipah","Tapah","Mitag"/**/,"Ragasa"/**/,"Neoguri","Bualoi"/**/,"Matmo"/**/,"Halong"],
+        ["Nakri","Fengshen","Kalmaegi"/**/,"Fung-wong"/**/,"Koto","Nokaen","Penha","Nuri","Sinlaku","Hagupit","Jangmi","Mekkhala","Higos","Bavi","Maysak","Haishen","Noul","Dolphin","Kujira","Chan-hom","Peilou","Nangka","Saudel","Narra","Gaenari","Atsani","Etau","Bang-lang"],
         ["Krovanh","Dujuan","Surigae","Choi-wan","Koguma","Champi","In-fa","Cempaka","Nepartak","Lupit","Mirinae","Nida","Omais","Luc-binh","Chanthu","Dianmu","Mindulle","Lionrock","Tokei","Namtheun","Malou","Nyatoh","Sarbul","Amuyao","Gosari","Chaba","Aere","Songda"],
-        ["Trases","Mulan","Meari","Tsing-ma","Tokage","Ong-mang","Muifa","Merbok","Nanmadol","Talas","Hodu","Kulap","Roke","Sonca","Nesat","Haitang","Jamjari","Banyan","Yamaneko","Pakhar","Sanvu","Mawar","Guchol","Talim","Doksuri"/**/,"Khanun","Lan","Saola"/**/]
+        ["Trases","Mulan","Meari","Tsing-ma","Tokage","Ong-mang","Muifa","Merbok","Nanmadol","Talas","Hodu","Kulap","Roke","Sonca","Nesat","Haitang","Jamjari","Banyan","Yamaneko","Pakhar","Sanvu","Mawar","Guchol","Talim","Bori","Khanun","Lan","Saobien"]
     ]
 });
 
@@ -478,10 +478,10 @@ DesignationSystem.PAGASA = new DesignationSystem({
     anchor: 2001,
     nameThresh: 0,
     mainLists: [
-        ["Auring","Bising","Crising","Dante","Emong","Fabian","Gorio","Huaning","Isang","Jacinto","Kiko","Lannie","Mirasol","Nando","Opong","Paolo","Quedan","Ramil","Salome","Tino","Uwan","Verbena","Wilma","Yasmin","Zoraida","Alamid","Bruno","Conching","Dolor","Ernie","Florante","Gerardo","Hernan","Isko","Jerome"],
+        ["Auring","Bising","Chico","Dante","Elias","Fabian","Gorio","Huaning","Isang","Jacinto","Kiko","Lannie","Magyawan","Nilad","Omar","Paolo","Quedan","Ramil","Salome","Tala","Urbano","Verbena","Wilma","Yasmin","Zoraida","Alamid","Bruno","Conching","Dolor","Ernie","Florante","Gerardo","Hernan","Isko","Jerome"],
         ["Ada","Basyang","Caloy","Domeng","Ester","Francisco","Gardo","Henry","Inday","Josie","Kiyapo","Luis","Maymay","Neneng","Obet","Pilandok","Queenie","Rosal","Samuel","Tomas","Umberto","Venus","Waldo","Yayang","Zeny","Agila","Bagwis","Chito","Diego","Elena","Felino","Gunding","Harriet","Indang","Jessa"],
-        ["Amang","Betty","Chedeng","Dodong","Egay","Falcon","Goring","Hanna","Ineng","Jenny","Kabayan","Liwayway","Marilyn","Nimfa","Onyok","Perla","Quiel","Ramon","Sarah","Tamaraw","Ugong","Viring","Weng","Yoyoy","Zigzag","Abe","Berto","Charo","Dado","Estoy","Felion","Gening","Herman","Irma","Jaime"],
-        ["Aghon","Butchoy","Carina","Dindo","Enteng","Ferdie","Gener","Helen","Igme","Julian","Kristine","Leon","Marce","Nika","Ofel","Pepito","Querubin","Romina","Siony","Tonyo","Upang","Vicky","Warren","Yoyong","Zosimo","Alakdan","Baldo","Clara","Dencio","Estong","Felipe","Gomer","Heling","Ismael","Julio"]
+        ["Amang","Betty","Chedeng","Dodong","Emil","Falcon","Gavino","Hanna","Ineng","Jenny","Kabayan","Liwayway","Marilyn","Nimfa","Onyok","Perla","Quiel","Ramon","Sarah","Tamaraw","Ugong","Viring","Weng","Yoyoy","Zigzag","Abe","Berto","Charo","Dado","Estoy","Felion","Gening","Herman","Irma","Jaime"],
+        ["Amuyao","Butchoy","Carina","Dindo","Edring","Ferdie","Gener","Helen","Igme","Josefa","Kidul","Lekep","Marce","Nanolay","Onos","Puwok","Querubin","Romina","Siony","Tonyo","Upang","Vicky","Warren","Yoyong","Zosimo","Alakdan","Baldo","Clara","Dencio","Estong","Felipe","Gomer","Heling","Ismael","Julio"]
     ]
 });
 
@@ -489,10 +489,10 @@ DesignationSystem.australianRegionBoM = new DesignationSystem({
     displayName: 'Australian Region (BoM)',
     suffix: 'U',
     mainLists: [
-        ["Anika","Billy","Charlotte","Darian","Ellie","Freddy"/* to be replaced */,"Gemm","Herman","Isabella","Jasper","Kirrily","Lincoln","Megan","Neville","Olga","Paul","Robyn","Sean","Taliah","Vince","Zelia"],
-        ["Anthony","Bianca","Courtney","Dianne","Errol","Fina","Grant","Hayley","Iggy","Jenna","Koji","Luana","Mitchell","Narelle","Oran","Peta","Riordan","Sandra","Tim","Victoria","Zane"],
+        ["Anika","Billy","Charlotte","Darian","Ellie","Frederic","Gemm","Herman","Isabella","Julian","Kima","Lincoln","Merryn","Neville","Olga","Paul","Robyn","Sean","Taliah","Vince","Zhu"],
+        ["Akio","Bianca","Courtney","Dianne","Errol","Fina","Grant","Hayley","Iggy","Jenna","Koji","Luana","Mitchell","Narelle","Owen","Peta","Riordan","Sandra","Tim","Victoria","Zane"],
         ["Alessia","Bruce","Catherine","Dylan","Edna","Fletcher","Gillian","Hadi","Ivana","Jack","Kate","Laszlo","Mingzhu","Nathan","Oriana","Quincey","Raquel","Stan","Tatiana","Uriah","Yvette"],
-        ["Alfred","Blanche","Caleb","Dara","Ernie","Frances","Greg","Hilda","Irving","Joyce","Kelvin","Linda","Marco","Nora","Owen","Penny","Riley","Savannah","Trung","Verity","Wallace"],
+        ["Anthony","Blanche","Caleb","Dara","Ernie","Frances","Greg","Hilda","Irving","Joyce","Kelvin","Linda","Marco","Nora","Oran","Penny","Riley","Savannah","Trung","Verity","Wallace"],
         ["Amber","Blake","Claudia","Declan","Esther","Ferdinand","Gretel","Heath","Imogen","Joshua","Kimi","Lucas","Marian","Niran","Odette","Paddy","Ruby","Stafford","Tiffany","Vernon"]
     ]
 });
@@ -553,9 +553,9 @@ DesignationSystem.southWestIndianOcean = new DesignationSystem({
     annual: true,
     anchor: 2017,
     mainLists: [
-        ['Awo','Blossom','Chenge','Dudzai','Ewetse','Fyita','Gezani','Horacio','Indusa','Juluka','Kundai','Lisebo','Michel','Nousra','Olivier','Pokera','Quincy','Rebaone','Salama','Tristan','Ursula','Violet','Wilson','Xila','Yekela','Zaina'],
-        ['Alvaro','Belal','Candice','Djoungou','Eleanor','Filipo','Gamane','Hidaya','Ialy','Jeremy','Kanga','Ludzi','Melina','Noah','Onias','Pelagie','Quamar','Rita','Solani','Tarik','Urilia','Vuyane','Wagner','Xusa','Yarona','Zacarias'],
-        ['Ancha','Bheki','Chido','Dikeledi','Elvis','Faida','Garance','Honde','Ivone','Jude','Kanto','Lira','Maipelo','Njazi','Oscar','Pamela','Quentin','Rajab','Savana','Themba','Uyapo','Viviane','Walter','Xangy','Yemurai','Zanele']
+        ['Awo','Blossom','Chenge','Dudzai','Ewetse','Fytia','Gezani','Horacio','Indusa','Juluka','Kundai','Lisebo','Michel','Nousra','Olivier','Pokera','Quincy','Rebaone','Salama','Tristan','Ursula','Violet','Wilson','Xila','Yekela','Zaina'],
+        ['Agueda','Bertrand','Celiwe','Dira','Emmie','Fikri','Gumbo','Hisna','Isaura','Jeremy','Kanga','Ludzi','Melina','Noah','Onias','Peta','Quamar','Rita','Solani','Tarik','Urilia','Vuyane','Wagner','Xusa','Yarona','Zacarias'],
+        ['Ainga','Basil','Cassia','Deba','Etienne','Fatuma','Gori','Henning','Itai','Josha','Kalulu','Letlama','Maipelo','Njazi','Oscar','Pamela','Quentin','Rouma','Soara','Themba','Uyapo','Viviane','Walter','Xavier','Yemurai','Zanele']
     ]
 });
 
@@ -563,13 +563,13 @@ DesignationSystem.southPacific = new DesignationSystem({
     displayName: 'South Pacific',
     suffix: 'F',
     mainLists: [
-        ['Aru','Bina','Carol','Dovi','Eva','Fili','Gina','Hale','Irene','Josese','Kirio','Lola','Mal','Nat','Osai','Pita','Rae','Seru','Tam','Urmil','Vaianu','Wati','Xavier','Yani','Zita'],
+        ['Aru','Bina','Carol','Dovi','Eva','Fili','Gina','Hale','Irene','Josese','Kirio','Lute','Mata','Nat','Osai','Pita','Rex','Seru','Tam','Urmil','Vaianu','Wati','Xavier','Yani','Zita'],
         ['Arthur','Becky','Chip','Denia','Elisa','Fotu','Glen','Hettie','Innis','Julie','Ken','Lin','Maciu','Nisha','Orea','Palu','Rene','Sarah','Troy','Uinita','Vanessa','Wano','Yvonne','Zaka'],
         ['Alvin','Bune','Cyril','Danial','Eden','Florin','Garry','Haley','Isa','June','Kofi','Louise','Mike','Niko','Opeti','Perry','Reuben','Solo','Tuni','Ulu','Victor','Wanita','Yates','Zidane'],
         ['Amos','Bart','Crystal','Dean','Ella','Fehi','Garth','Hola','Iris','Jo','Kala','Liua','Mona','Neil','Oma','Pana','Rita','Samadiyo','Tasi','Uesi','Vicky','Wasi','Yabaki','Zazu']
     ],
     replacementLists: [
-        ['Adama','Ben','Christy','Dakai','Emosi','Feki','Germaine','Hart','Ili','Junina','Kosi','Lute','Mata','Neta','Olina','Paea','Rex','Sete','Temo','Uila','Velma','Wane','Yavala','Zanna']
+        ['Adama','Ben','Christy','Dakai','Emosi','Feki','Germaine','Hart','Ili','Junina','Kosi','Lia','Manoah','Neta','Olina','Paea','Rovi','Sete','Temo','Uila','Velma','Wane','Yavala','Zanna']
     ]
 });
 
@@ -592,7 +592,9 @@ DesignationSystem.mediterranean = new DesignationSystem({
     mainLists: [
         ['Apollo', 'Bianca', 'Ciril', 'Diana', 'Enea', 'Fedra', 'Goran', 'Hera', 'Ivan', 'Lina', 'Marco', 'Nada', 'Ole', 'Pandora', 'Remo', 'Sandra', 'Teodor', 'Ursula', 'Vito', 'Zora'],
         ['Ana', 'Bogdan', 'Clio', 'Dino', 'Eva', 'Fobos', 'Gaia', 'Helios', 'Ilina', 'Leon', 'Minerva', 'Nino', 'Olga', 'Petar', 'Rea', 'Silvan', 'Talia', 'Ugo', 'Vesta', 'Zenon'],
-        ['Alexis', 'Bettina', 'Ciro', 'Dorothea', 'Emil', 'Fedra', 'Gori', 'Helga', 'Italo', 'Lilith', 'Marco', 'Nada', 'Ole', 'Palmira', 'Rocky', 'Shirlene', 'Tino', 'Ute', 'Vito', 'Zena']
+        ['Alexis', 'Bettina', 'Ciro', 'Dorothea', 'Emil', 'Fedra', 'Gori', 'Helga', 'Italo', 'Lilith', 'Marco', 'Nada', 'Ole', 'Palmira', 'Rocky', 'Shirlene', 'Tino', 'Ute', 'Vito', 'Zena'],
+        ['Atena','Boris','Cassandra','Dionisio','Elena','Felix','Gabri','Hans','Ines','Lukas','Moira','Nenu','Oana','Pino','Rosa','Sirio','Talia','Uli','Vera','Zoran'],
+        ['Alessio', 'Barbara', 'Cassio', 'Deborah', 'Erminio', 'Frida', 'Gennaro', 'Isotta', 'Lino', 'Mila', 'Nano', 'Olga', 'Pedro', 'Ruslana', 'Santillo', 'Tamara', 'Ubaldo', 'Vanessa', 'Zeno']
     ]
 });
 
@@ -727,6 +729,51 @@ DesignationSystem.easternPacific1979 = new DesignationSystem({
     ]
 });
 
+DesignationSystem.westernPacific1979 = new DesignationSystem({
+    displayName: 'Western Pacific (1979-89)',
+    suffix: 'W',
+    mainLists: [
+        ["Andy","Bess","Cecil","Dot","Ellis","Faye","Gordon","Hope","Irving","Judy","Ken","Lola","Mac","Nancy","Owen","Pamela","Roger","Sarah","Tip","Vera","Wayne"],
+        ["Abby","Ben","Carmen","Dom","Ellen","Forrest","Georgia","Herbert","Ida","Joe","Kim","Lex","Marge","Norris","Orchid","Percy","Ruth","Sperry","Thelma","Vernon","Wynne"],
+        ["Alex","Betty","Cary","Dinah","Ed","Freda","Gerald","Holly","Ike","June","Kelly","Lynn","Maury","Nina","Ogden","Phyllis","Roy","Susan","Thad","Vanessa","Warren"],
+        ["Agnes","Bill","Clara","Doyle","Elsie","Fabian","Gay","Hazen","Irma","Jeff","Kit","Lee","Mamie","Nelson","Odessa","Pat","Ruby","Skip","Tess","Val","Winona"]       
+    ]
+});
+
+DesignationSystem.westernPacific1989 = new DesignationSystem({
+    displayName: 'Western Pacific (1989-95)',
+    suffix: 'W',
+    mainLists: [
+        ["Angela","Brian","Colleen","Dan","Elsie","Forrest","Gay","Hunt","Irma","Jack","Koryn","Lewis","Marian","Nathan","Ofelia","Percy","Robyn","Steve","Tasha","Vernon","Winona","Yancy","Zola"],
+        ["Abe","Becky","Cecil","Dot","Ed","Flo","Gene","Hattie","Ira","Jeana","Kyle","Lola","Mike","Nell","Owen","Page","Russ","Sharon","Tim","Vanessa","Walt","Yunya","Zeke"],
+        ["Amy","Brenda","Caitlin","Doug","Ellie","Fred","Gladys","Harry","Ivy","Joel","Kinna","Luke","Mireille","Nat","Orchid","Pat","Ruth","Seth","Thelma","Verne","Wilda","Yuri","Zelda"],
+        ["Axel","Bobbie","Chuck","Deanna","Eli","Faye","Gary","Helen","Irving","Janis","Kent","Lois","Mark","Nina","Omar","Polly","Ryan","Sibyl","Ted","Val","Ward","Yvette","Zack"]
+    ]
+});
+
+DesignationSystem.westernPacific1996 = new DesignationSystem({
+    displayName: 'Western Pacific (1996-99)',
+    suffix: 'W',
+    mainLists: [
+        ["Ann","Bart","Cam","Dan","Eve","Frankie","Gloria","Herb","Ian","Joy","Kirk","Lisa","Marty","Niki","Orson","Piper","Rick","Sally","Tom","Violet","Willie","Yates","Zane"],
+        ["Abel","Beth","Carlo","Dale","Ernie","Fern","Greg","Hannah","Isa","Jimmy","Kelly","Levi","Marie","Nestor","Opal","Peter","Rosie","Scott","Tina","Victor","Winnie","Yule","Zita"],
+        ["Amber","Bing","Cass","David","Ella","Fritz","Ginger","Hank","Ivan","Joan","Keith","Linda","Mort","Nichole","Otto","Penny","Rex","Stella","Todd","Vicki","Waldo","Yanni","Zeb"],
+        ["Alex","Babs","Chip","Dawn","Elvis","Faith","Gil","Hilda","Iris","Jacob","Kate","Leo","Maggie","Neil","Olga","Paul","Rachel","Sam","Tanya","Virgil","Wendy","York","Zia"]
+    ]
+});
+
+DesignationSystem.westernPacific2000 = new DesignationSystem({
+    displayName: 'Western Pacific (2000-05)',
+    suffix: 'W',
+    mainLists: [
+        ["Damrey","Longwang","Kirogi","Kai-tak","Tembin","Bolaven","Chanchu","Jelawat","Ewiniar","Bilis","Gaemi","Prapiroon","Maria","Saomai","Bopha","Wukong","Sonamu","Shanshan","Yagi","Xangsane","Bebinca","Rumbia","Soulik","Cimaron","Jebi","Durian","Utor","Trami"],
+        ["Kong-rey","Yutu","Toraji","Man-yi","Usagi","Pabuk","Wutip","Sepat","Fitow","Danas","Nari","Wipha","Francisco","Lekima","Krosa","Haiyan","Podul","Lingling","Kajiki","Faxai","Vamei","Tapah","Mitag","Hagibis","Neoguri","Rammasun","Chataan","Halong"],
+        ["Nakri","Fengshen","Kalmaegi","Fung-wong","Kammuri","Phanfone","Vongfong","Rusa","Sinlaku","Hagupit","Jangmi","Mekkhala","Higos","Bavi","Maysak","Haishen","Pongsona","Yanyan","Kujira","Chan-hom","Linfa","Nangka","Soudelor","Imbudo","Goni","Morakot","Etau","Vamco"],
+        ["Krovanh","Dujuan","Maemi","Choi-wan","Koppu","Ketsana","Parma","Melor","Nepartak","Lupit","Sudal","Nida","Omais","Conson","Chanthu","Dianmu","Mindulle","Tingting","Kompasu","Namtheun","Malou","Meranti","Rananim","Malakas","Megi","Chaba","Aere","Songda"],
+        ["Sarika","Haima","Meari","Ma-on","Tokage","Nock-ten","Muifa","Merbok","Nanmadol","Talas","Noru","Kulap","Roke","Sonca","Nesat","Haitang","Nalgae","Banyan","Washi","Matsa","Sanvu","Mawar","Guchol","Talim","Nabi","Khanun","Vicente","Saola"]
+    ]
+});
+
 DesignationSystem.periodicTable = new DesignationSystem({
     displayName: 'Periodic Table',
     suffix: DEPRESSION_LETTER,
@@ -762,6 +809,10 @@ DesignationSystem.presetDesignationSystems = [
     DesignationSystem.easternPacific1965,
     DesignationSystem.easternPacific1978,
     DesignationSystem.easternPacific1979,
+    DesignationSystem.westernPacific1979,
+    DesignationSystem.westernPacific1989,
+    DesignationSystem.westernPacific1996,
+    DesignationSystem.westernPacific2000,
     DesignationSystem.periodicTable,
     DesignationSystem.periodicTableAnnual
 ];
