@@ -26,7 +26,6 @@ var paused,
     renderToDo,
     oldMouseX,
     oldMouseY,
-    seasonCurve;
 
 function setup() {
     setVersion(TITLE + " v", VERSION_NUMBER);
