@@ -8,7 +8,7 @@ class Basin{
         this.subBasins = {};
         this.tick = 0;
         this.lastSaved = 0;
-        this.godMode = opts.godMode;
+        this.testMode = opts.testMode;
         this.SHem = opts.hem;
         this.actMode = opts.actMode || 0;
         if(opts.year !== undefined)
@@ -31,10 +31,10 @@ class Basin{
             );
         }
         // if(MAP_TYPES[this.mapType].special==='CPac'){
-        //     this.subBasins[DEFAULT_MAIN_SUBBASIN].designationSystem.naming.crossingMode = DESIG_CROSSMODE_KEEP;
-        //     this.subBasins[DEFAULT_MAIN_SUBBASIN].designationSystem.numbering.crossingMode = DESIG_CROSSMODE_KEEP;
+        //     this.subBasins[DEFAULT_MAIN_SUBBASIN].designationSystem.naming.crossin = DESIG_CROSSMODE_KEEP;
+        //     this.subBasins[DEFAULT_MAIN_SUBBASIN].designationSystem.numbering.crossin = DESIG_CROSSMODE_KEEP;
         //     this.addSubBasin(128,undefined,'Central Pacific',DEFAULT_MAIN_SUBBASIN,undefined,
-        //         DesignationSystem.centralPacific.clone().setCrossingModes(DESIG_CROSSMODE_KEEP,DESIG_CROSSMODE_KEEP)
+        //         DesignationSystem.centralPacific.clone().setCrossins(DESIG_CROSSMODE_KEEP,DESIG_CROSSMODE_KEEP)
         //     );
         // }else if(MAP_TYPES[this.mapType].special==='PAGASA'){
         //     this.addSubBasin(128,undefined,'PAGASA AoR',DEFAULT_MAIN_SUBBASIN,undefined,
@@ -57,13 +57,13 @@ class Basin{
         //         })
         //     );
         // }else if(MAP_TYPES[this.mapType].special==='AUS'){
-        //     this.subBasins[DEFAULT_MAIN_SUBBASIN].designationSystem.naming.crossingMode = DESIG_CROSSMODE_KEEP;
-        //     this.subBasins[DEFAULT_MAIN_SUBBASIN].designationSystem.numbering.crossingMode = DESIG_CROSSMODE_KEEP;
+        //     this.subBasins[DEFAULT_MAIN_SUBBASIN].designationSystem.naming.crossin = DESIG_CROSSMODE_KEEP;
+        //     this.subBasins[DEFAULT_MAIN_SUBBASIN].designationSystem.numbering.crossin = DESIG_CROSSMODE_KEEP;
         //     this.addSubBasin(128,undefined,'Jakarta TCWC',DEFAULT_MAIN_SUBBASIN,undefined,
-        //         DesignationSystem.australianRegionJakarta.clone().setCrossingModes(undefined,DESIG_CROSSMODE_KEEP)
+        //         DesignationSystem.australianRegionJakarta.clone().setCrossins(undefined,DESIG_CROSSMODE_KEEP)
         //     );
         //     this.addSubBasin(129,undefined,'Port Moresby TCWC',DEFAULT_MAIN_SUBBASIN,undefined,
-        //         DesignationSystem.australianRegionPortMoresby.clone().setCrossingModes(undefined,DESIG_CROSSMODE_KEEP)
+        //         DesignationSystem.australianRegionPortMoresby.clone().setCrossins(undefined,DESIG_CROSSMODE_KEEP)
         //     );
         // }
         this.seed = opts.seed || moment().valueOf();
@@ -408,12 +408,12 @@ class Basin{
         this.addSubBasin(ids.shem, undefined, 'Southern Hemisphere', ids.world);
         this.addSubBasin(ids.atl, undefined, 'Atlantic', ids.nhem,
             Scale.saffirSimpson.clone(),
-            DesignationSystem.atlantic.clone().setCrossingModes(undefined, DESIG_CROSSMODE_KEEP)
+            DesignationSystem.atlantic.clone().setCrossins(undefined, DESIG_CROSSMODE_KEEP)
             );
         this.addSubBasin(ids.atlland, undefined, 'Atl Land (technical)', ids.atl);
         this.addSubBasin(ids.epac, undefined, 'Eastern Pacific', ids.nhem,
             Scale.saffirSimpson.clone(),
-            DesignationSystem.easternPacific.clone().setCrossingModes(undefined, DESIG_CROSSMODE_KEEP)
+            DesignationSystem.easternPacific.clone().setCrossins(undefined, DESIG_CROSSMODE_KEEP)
             );
         this.addSubBasin(ids.epacland, undefined, 'EPac Land (technical)', ids.epac);
         this.addSubBasin(ids.cpac, undefined, 'Central Pacific', ids.epac,
@@ -521,7 +521,7 @@ class Basin{
             b.flags = 0;
             b.flags |= 0;   // former hyper mode
             b.flags <<= 1;
-            b.flags |= this.godMode;
+            b.flags |= this.testMode;
             b.flags <<= 1;
             b.flags |= this.SHem;
             for(let p of [
@@ -582,7 +582,7 @@ class Basin{
                         let flags = obj.flags;
                         this.SHem = flags & 1;
                         flags >>= 1;
-                        this.godMode = flags & 1;
+                        this.testMode = flags & 1;
                         flags >>= 1;
                         oldhyper = flags & 1;
                         this.actMode = obj.actMode;
@@ -629,7 +629,7 @@ class Basin{
                             this.mapType = arr.pop() || 0;
                             this.SHem = flags & 1;
                             flags >>= 1;
-                            this.godMode = flags & 1;
+                            this.testMode = flags & 1;
                             flags >>= 1;
                             oldhyper = flags & 1;
                             if(oldhyper)
